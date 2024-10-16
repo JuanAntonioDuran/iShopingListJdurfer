@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         addProductButton = findViewById(R.id.addProductButton);
         addPendingButton = findViewById(R.id.addPendingButton);
         SpinnerLactosaGlucosa = findViewById(R.id.SpinnerLactosaGlucosa);
-        IrSeleccionados = findViewById(R.id.IrSeleccionados);
+
         // Cargar productos de la lista
         ProductList.preloadProducts();
 
@@ -84,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+        spinnerAdapter.add("Productos Lactosa");
+        spinnerAdapter.add("Productos Glucosa");
+        spinnerAdapter.add("Todos");
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        SpinnerLactosaGlucosa.setAdapter(spinnerAdapter);
 
     }
 

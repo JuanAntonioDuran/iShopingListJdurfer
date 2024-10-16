@@ -66,11 +66,11 @@ public class ProductAdapter extends BaseAdapter {
         productGlucosa.setText(product.isGluten() ? "Tiene Glucosa" : "No Tiene Glucosa");
 
         if (product.isLactosa() && !product.isGluten()){
-            productName.setTextColor(ContextCompat.getColor(context,R.color.Lactosa));
+            convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.Lactosa));
         } else if (product.isGluten() && !product.isLactosa()) {
-            productName.setTextColor(ContextCompat.getColor(context,R.color.Gluten));
+            convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.Gluten));
         } else if (product.isGluten() && product.isLactosa()) {
-            productName.setTextColor(ContextCompat.getColor(context,R.color.Ambos));
+            convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.Ambos));
         }
 
 

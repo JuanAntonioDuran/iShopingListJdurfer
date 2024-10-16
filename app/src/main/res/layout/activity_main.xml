@@ -33,11 +33,6 @@
             android:layout_height="wrap_content"
             android:text="Añadir a Comprado"/>
 
-        <Button
-            android:id="@+id/IrSeleccionados"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ir a los seleccionados"/>
 
         <Spinner
             android:id="@+id/SpinnerLactosaGlucosa"
