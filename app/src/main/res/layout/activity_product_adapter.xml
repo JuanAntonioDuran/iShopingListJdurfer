@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Adapters.ProductAdapter">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Cantidad del producto -->
+        <TextView
+            android:id="@+id/productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: 0"
+            android:textSize="16sp" />
+
+        <!-- Estado del producto (Comprado o Pendiente) -->
+        <TextView
+            android:id="@+id/productStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: Pendiente"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/productLactosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lactosa: No se"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/productGlucosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glucosa: No se"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
